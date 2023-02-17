@@ -254,6 +254,8 @@ int main(int argc, char** argv)
 	fflush(stdout);
 
 	/* Set address */
+	
+#if 0
 	u8TxBuff[0] = 0x81;
 	u8TxBuff[1] = 0x02;
 	u8TxBuff[2] = 0x00;
@@ -277,9 +279,10 @@ int main(int argc, char** argv)
 		printf("Check data: FAIL\n");
 		return 0;
 	}
+#endif
 
 	/* verify data */
-	printf("Write:\n");
+	printf("Verify:\n");
 	n = u32FileSize / 0x3c;
 	for (i = 0; i < n; ++i)
 	{
