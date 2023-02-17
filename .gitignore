@@ -1,0 +1,6 @@
+.vs/
+JSON/
+Release/
+Debug/
+*.sln
+*.vcx*
